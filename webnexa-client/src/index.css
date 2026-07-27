@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+body {
+  background-color: #07090f !important;
+  color: #ffffff !important;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #07090f;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Scroll Progress Line Keyframe & Utility for Tailwind v4 */
+@keyframes topProgress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.scroll-progress-line {
+  animation: topProgress linear;
+  animation-timeline: scroll();
+}
+
+/* Custom Smooth Transitions */
+* {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07090f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f293d;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Prevent Cursor Dot on Mobile Touch Screens */
+  .pointer-events-none {
+    display: none !important;
+  }
+}
