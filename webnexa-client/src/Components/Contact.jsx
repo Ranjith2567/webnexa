@@ -31,7 +31,7 @@ const Contact = ({ selectedPlan }) => {
 
     const formData = new FormData(e.target);
     // Web3Forms API Key integration
-    formData.append('access_key', '03f078af-d6d0-4535-bb31-d777180e96a2');
+    formData.append('access_key', import.meta.env.VITE_WEB3FORMS_ACCESS_KEY_2);
     formData.append('service', selectedService);
     formData.append('message', message);
 

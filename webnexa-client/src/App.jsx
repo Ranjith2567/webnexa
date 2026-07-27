@@ -31,7 +31,7 @@ function App() {
 
           const visitorInfo = new FormData();
           // ⚠️ Puthiya Visitor Tracker Access Key-a inga podunga
-          visitorInfo.append('access_key', '05a40f94-55ed-4234-9814-4296271ec4b5');
+          visitorInfo.append('access_key', import.meta.env.VITE_VISTER_ACCESS_KEY_1);
           visitorInfo.append('subject', '🚀 New Visitor on WebNexa Website!');
           visitorInfo.append('from_name', 'WebNexa Visitor Tracker');
           visitorInfo.append('message', `
