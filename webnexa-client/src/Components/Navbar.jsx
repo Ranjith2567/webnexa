@@ -65,6 +65,7 @@ const Navbar = () => {
           <a href="#home" className="hover:text-[#38bdf8] transition-colors">Home</a>
           <a href="#about" className="hover:text-[#38bdf8] transition-colors">About</a>
           <a href="#services" className="hover:text-[#38bdf8] transition-colors">Services</a>
+          <a href="#products" className="hover:text-[#38bdf8] transition-colors">Products</a>
           <a href="#process" className="hover:text-[#38bdf8] transition-colors">Process</a>
           <a href="#pricing" className="hover:text-[#38bdf8] transition-colors">Pricing</a>
           <a href="#contact" className="hover:text-[#38bdf8] transition-colors">Contact</a>
@@ -97,6 +98,7 @@ const Navbar = () => {
           <a href="#home" onClick={() => setMobileMenuOpen(false)} className="text-gray-300 hover:text-[#38bdf8]">Home</a>
           <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-gray-300 hover:text-[#38bdf8]">About</a>
           <a href="#services" onClick={() => setMobileMenuOpen(false)} className="text-gray-300 hover:text-[#38bdf8]">Services</a>
+          <a href="#products" onClick={() => setMobileMenuOpen(false)}className="text-gray-300 hover:text-[#38bdf8]">Products</a>
           <a href="#process" onClick={() => setMobileMenuOpen(false)} className="text-gray-300 hover:text-[#38bdf8]">Process</a>
           <a href="#pricing" onClick={() => setMobileMenuOpen(false)} className="text-gray-300 hover:text-[#38bdf8]">Pricing</a>
           <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="text-gray-300 hover:text-[#38bdf8]">Contact</a>

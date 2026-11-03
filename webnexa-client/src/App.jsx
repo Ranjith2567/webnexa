@@ -13,6 +13,7 @@ import CTA from './Components/CTA';
 import FloatingChat from './Components/FloatingChat';
 import Preloader from './Components/Preloader';
 import CustomCursor from './Components/CustomCursor';
+import Products from './Components/Products';
 
 function App() {
   const [selectedPlan, setSelectedPlan] = useState('');
@@ -83,8 +84,9 @@ function App() {
           <Hero />
           <Stats />
           <About />
-          <Services />
-          <Process />
+<Services />
+<Products />
+<Process />
           <Pricing onSelectPlan={handleSelectPlan} />
           <Testimonials />
           <CTA />
